@@ -1,0 +1,7 @@
+{
+  "name": "SRLAB",
+  "description": "A comprehensive speech analysis tool visualizing the full DSP pipeline (Framing, FFT, Mel-Filterbank, MFCC) with a DTW-based command matcher and Gemini-powered continuous transcription.",
+  "requestFramePermissions": [
+    "microphone"
+  ]
+}
