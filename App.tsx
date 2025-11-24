@@ -254,14 +254,14 @@ const App: React.FC = () => {
                                     <div className="p-2 bg-indigo-50 rounded-lg text-indigo-500">
                                         <Settings2 size={20}/>
                                     </div>
-                                    <h3 className="font-semibold text-gray-900">语音模板</h3>
+                                    <h3 className="font-semibold text-gray-900">语音数据</h3>
                                 </div>
-                                <p className="text-sm text-gray-500 mb-4">训练系统识别特定的语音指令。</p>
+                                <p className="text-sm text-gray-500 mb-4">训练系统识别特定的语音数据。</p>
                                 
                                 <input 
                                     type="text" 
                                     id="templateName"
-                                    placeholder="指令名称 (如：启动)" 
+                                    placeholder="数据命名 (如：一)" 
                                     className="w-full bg-gray-50 border border-gray-200 rounded-xl px-4 py-3 text-sm focus:outline-none focus:ring-2 focus:ring-indigo-500/20 focus:border-indigo-500 transition-all mb-3"
                                 />
                             </div>
@@ -282,7 +282,7 @@ const App: React.FC = () => {
                                     : 'bg-indigo-600 text-white hover:bg-indigo-700 shadow-indigo-200'
                                 }`}
                             >
-                                {isRecording ? "停止并保存" : "录制模板"}
+                                {isRecording ? "停止并保存" : "录制语音数据"}
                             </button>
                          </div>
 
