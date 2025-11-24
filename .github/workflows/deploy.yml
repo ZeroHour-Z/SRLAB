@@ -36,6 +36,10 @@ jobs:
         
       - name: Build
         run: npm run build
+        env:
+          NODE_ENV: production
+          # 自动使用仓库名作为 base path
+          VITE_REPO_NAME: ${{ github.event.repository.name }}
         
       - name: Upload artifact
         uses: actions/upload-pages-artifact@v3
